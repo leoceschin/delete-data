@@ -1,9 +1,12 @@
 import os
 from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory, send_file
 from werkzeug.utils import secure_filename
+from exiftool import ExifTool
+import subprocess
 
 UPLOAD_FOLDER = './upload'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -28,6 +31,9 @@ def index():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            exiftool_command = ["exiftool", "-all=", app.config['UPLOAD_FOLDER']+"/"+filename, app.config['UPLOAD_FOLDER']+"/"+filename]
+            subprocess.run(exiftool_command)
+            
             return download_page(filename)
     return render_template('index.html')
 
