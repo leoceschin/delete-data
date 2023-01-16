@@ -33,10 +33,10 @@ Ao fazer o upload de um arquivo e clicar em "Erase", a aplicação chama um subp
 <b>Antes</b>
 
 ![metadata1](https://user-images.githubusercontent.com/16521256/212620047-37ab3ea4-db67-4b92-8f71-060f86df740f.png)
-
 ![metadata2](https://user-images.githubusercontent.com/16521256/212620363-b6c042fb-2410-40b0-9303-e6c28a663b1e.png)
 
 <b>Depois</b>
+
 ![metadataResult](https://user-images.githubusercontent.com/16521256/212620392-4e4a4d3e-025a-4b27-8fb6-57dd7c6e4b8f.png)
 
 Projeto desenvolvido por [Leona Ceschin](https://linkedin.com/in/leonaceschin)
