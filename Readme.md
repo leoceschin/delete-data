@@ -25,17 +25,18 @@ $export FLASK_APP=app.py
 $flask run
 ```
 Abra a aplicação no endereço <u>127.0.0.1:5000</u>.
-![Captura de Tela 2023-01-16 às 02 09 23](https://user-images.githubusercontent.com/16521256/212619773-012da750-9a51-4f69-b870-2bc6882b4feb.png)
+![index](https://user-images.githubusercontent.com/16521256/212619773-012da750-9a51-4f69-b870-2bc6882b4feb.png)
 
 ## Funcionamento
 Ao fazer o upload de um arquivo e clicar em "Erase", a aplicação chama um subprocesso do sistema executando a ferramenta exiftool, ela remove os metadados do arquivo e o devolve para download.
 
 <b>Antes</b>
-![Captura de Tela 2023-01-16 às 04 12 28](https://user-images.githubusercontent.com/16521256/212620047-37ab3ea4-db67-4b92-8f71-060f86df740f.png)
-![Captura de Tela 2023-01-16 às 04 23 10](https://user-images.githubusercontent.com/16521256/212620363-b6c042fb-2410-40b0-9303-e6c28a663b1e.png)
 
+![metadata1](https://user-images.githubusercontent.com/16521256/212620047-37ab3ea4-db67-4b92-8f71-060f86df740f.png)
+
+![metadata2](https://user-images.githubusercontent.com/16521256/212620363-b6c042fb-2410-40b0-9303-e6c28a663b1e.png)
 
 <b>Depois</b>
-![Captura de Tela 2023-01-16 às 04 12 48](https://user-images.githubusercontent.com/16521256/212620392-4e4a4d3e-025a-4b27-8fb6-57dd7c6e4b8f.png)
+![metadataResult](https://user-images.githubusercontent.com/16521256/212620392-4e4a4d3e-025a-4b27-8fb6-57dd7c6e4b8f.png)
 
 Projeto desenvolvido por [Leona Ceschin](https://linkedin.com/in/leonaceschin)
