@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,26 +7,116 @@
     list-style: none;
     border: 0;
     text-align: center;
-    
-    
+        
 }
 
 body {
     margin: 0px;
+    background-color: #E1E1E1;
+    height: 100vh;
+    display: block;
+    justify-content: space-between;
 }
 
 .container {
+    height: 100%;
     width: 100vw;
-    height: 100vh;
-    background: #6C7A89;
+    background: #E1E1E1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.box {
-    width: 500px;
-    height: 500px;
-    background: #fff;
+h1 {
+    font-family: 'Inter';
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Inter';
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Inter';
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+label {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+label span:nth-child(1) {
+    background-color: #72BA7D;
+    width: 350px;
+    padding: 16px;
+    text-align: left;
+    color: #000;
+
+}
+
+label span:nth-child(2) {
+    background-color: #397D43;
+    color: #fff;
+    padding: 16px 24px 16px 24px;
+    cursor: pointer;
+}
+label span:nth-child(2):hover {
+    background-color: #1c5223;
+    transition: 0.2s;
+}
+
+input[type="file"] {
+    display: none;
+   
+}
+
+#submit-button {
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #397D43;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #1c5223;
+    transition: 0.2s;
+}
+footer { 
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+footer p {
+    padding: 0;
+    font-size: 14px;
 }

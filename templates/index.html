@@ -14,12 +14,26 @@
             <h3>Protect your privacy!</h3>
             <p>Insert a file and remove your metadata. </p>
             <form method="post" enctype="multipart/form-data">
-                <input type=file name=file>
-                <input type=submit value=Upload>
+                <div>
+                    <input id="file-input" type=file name=file>
+                    <label for="file-input">
+                        <span class="file-title"></span>
+                        <span>SELECT A FILE</span>
+                    </label>
+                </div>
+                <input id="submit-button" type=submit value=ERASE>
     
             </form>
 
         </div>
     </div>
+    <footer><p>Made by <a href="https://linkedin.com/in/leonaceschin">Leona Ceschin</a></p></footer>
 </body>
+<script type="text/javascript">
+
+    document.querySelector('#file-input').addEventListener('change', function(){
+        document.querySelector('.file-title').textContent = this.files[0].name;
+    });
+
+</script>
 </html>
